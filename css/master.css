@@ -170,7 +170,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -179,9 +179,16 @@ body {
     color: #222;
 }
 
-header,
+img {
+    max-width: 100%;
+}
+
+header p{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+}
+
 footer {
-    min-height: 10vh;
     width: 100%;
 }
 
@@ -210,16 +217,21 @@ aside {
 .design {
     width: 100%;
     height: 90%;
-    background-color: red;
+    background-color: #E8505B;
     margin: -1.5rem;
-    mix-blend-mode: color-burn;
-    opacity: 0.8;
+    mix-blend-mode: multiply;
+    /* opacity: 0.8; */
 }
 
 main {
     background-color: white;
     /* width: 70%; */
     flex: 2 2 600px;
+    min-height: 100vh;
+}
+
+.flex-1-1-300 {
+    flex: 1 1 150px;
 }
 
 .espaceInt {
@@ -228,11 +240,14 @@ main {
 }
 
 header {
-    background-color: #34332E;
-    background: url(../images/image02.jpg) fixed;
+    background-color: ;
+    background: linear-gradient(#34332E,#34332E) , url(../images/image02.jpg) fixed;
     background-size: cover;
     background-position: 50% 50%;
+    background-blend-mode: color;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    min-height: 10vh;
+    width: 100%;
 }
 
 nav {
@@ -248,9 +263,11 @@ nav {
 }
 
 article {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     padding: 1rem 4rem;
-    margin: 1rem 0;
+    margin: 4rem 0;
+    border-radius: 4px;
+    
 }
 
 nav a {
@@ -267,10 +284,6 @@ nav a:hover {
 
 #btnMenu {
     margin-left: auto;
-}
-
-.titreP {
-    
 }
 
 .color-white {
@@ -298,8 +311,9 @@ nav a:hover {
     color: #34332E;
 }
 
-footer {
-    background-color: #222;
+.pageFooter {
+    background-color: #34332E;
+    min-height: 10vh;
 }
 
 h1,
@@ -314,9 +328,19 @@ h6,
     color: #34332E;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
 .titreP {
     color: white;
     font-size: 4.7rem;
+}
+
+blockquote {
+    margin: 1rem 0;
+    background-color: #f5f5f5;
+    padding: 1rem;
 }
 
 .col {
@@ -328,7 +352,7 @@ h6,
     flex: 1 1 200px;
     /* padding: 1rem; */
     position: relative;
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
 }
 
 .miniature img {
@@ -369,6 +393,7 @@ h6,
     top: 8rem;
     max-width: 600px;
     margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
 }
 
 .formContact {
@@ -401,10 +426,30 @@ button {
     width: 100%;
 }
 
-.contenuVideo .mediaVideo {
+.mediaVideo {
     /* max-width: 100%; */
     flex: 1 1 350px;
+    margin: 1rem;
 }
+
+video {
+    max-width: 100%;
+    display: block;
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+}
+
+hr {
+    border-color: #f5f5f5;
+    border-width: 1px;
+    opacity: 0.4;
+    width: 92%;
+}
+
+
 
 @media (max-width: 640px) {
     .titreP {
