@@ -174,6 +174,7 @@ body {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     font-size: 20px;
     color: #222;
 }
@@ -184,27 +185,37 @@ footer {
     width: 100%;
 }
 
-main,
-aside {
-    min-height: 80vh;
-    /* min-width: 300px; */
-    /*Voir flex-basis*/
-}
+
 
 aside {
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
     /* width: 30%; */
     flex: 1 1 300px;
+}
+
+.profil {
+    /* width: 100%; */
+    flex: 1 1 200px;
+    height: 600px;
+    background: 50% 100% / cover url('../images/profil.png') no-repeat;
+    filter: grayscale(0.5);
+    margin: 0 2rem;
+}
+
+.profilTxt {
+    flex: 1 1 200px;
+    margin: 0 2rem;
 }
 
 main {
     background-color: white;
     /* width: 70%; */
     flex: 2 2 600px;
+    
 }
 
 .espaceInt {
-    padding: 1rem;
+    padding: 0 1rem;
     /*1rem = 1em = 16px*/
 }
 
@@ -226,6 +237,13 @@ nav {
     /*ATTENTION z-index fait passer le menu en avnt plan*/
     /*--------------------------------------------------*/
     z-index: 1;
+}
+
+article {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem 4rem;
+    margin: 1rem 0;
+
 }
 
 nav a {
@@ -288,7 +306,7 @@ h6,
     font-family: 'Monda', sans-serif;
 }
 
-.col3 {
+.col {
     display: flex;
     flex-wrap: wrap;
 }
@@ -297,6 +315,7 @@ h6,
     flex: 1 1 200px;
     /* padding: 1rem; */
     position: relative;
+    margin: 0 1rem;
 }
 
 .miniature img {
@@ -334,7 +353,11 @@ h6,
 .glu2 {
     position: sticky;
     top: 5rem;
+    max-width: 600px;
+    margin: auto;
 }
+
+
 
 .formContact {
     display: flex;
