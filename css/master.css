@@ -205,7 +205,7 @@ aside {
     flex: 1 1 200px;
     height: 600px;
     background: 50% 100% / cover url('../images/profil.png') no-repeat;
-    filter: grayscale(0.5);
+    /* filter: grayscale(0.5); */
     margin: 0 2rem;
 }
 
@@ -222,6 +222,8 @@ aside {
     mix-blend-mode: multiply;
     /* opacity: 0.8; */
 }
+
+
 
 main {
     background-color: white;
@@ -240,7 +242,6 @@ main {
 }
 
 header {
-    background-color: ;
     background: linear-gradient(#34332E,#34332E) , url(../images/image02.jpg) fixed;
     background-size: cover;
     background-position: 50% 50%;
@@ -296,19 +297,41 @@ nav a:hover {
 
 .btn-primary {
     display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background-color: #34332E;
+    min-width: 220px;
+    background-color: #E8505B;
     border-radius: 5px;
     border: 2px solid transparent;
-    margin: 1rem 0;
+    padding: 0.5rem 0.5rem;
+    margin: 0.2rem 0;
     text-decoration: none;
     transition: all 300ms;
+    font-size: 1rem;
 }
 
 .btn-primary:hover {
-    border: 2px solid #34332E;
+    border: 2px solid #E8505B;
     background-color: transparent;
-    color: #34332E;
+    color: #E8505B;
+}
+
+.btn-secondary {
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    border: 2px solid #E8505B;
+    background-color: transparent;
+    color: #E8505B;
+    transition: all 300ms;
+
+}
+
+.btn-secondary:hover {
+    border: 2px solid #E8505B;
+    background-color: transparent;
+    color: #E8505B;
 }
 
 .pageFooter {
@@ -326,6 +349,7 @@ h6,
     width: 100%;
     font-family: 'Monda', sans-serif;
     color: #34332E;
+    opacity: 0.8;
 }
 
 h1 {
@@ -374,7 +398,7 @@ blockquote {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #E8505B;
     opacity: 0;
     transition: opacity 300ms;
 }
@@ -449,7 +473,9 @@ hr {
     width: 92%;
 }
 
-
+blockquote i {
+    color: #E8505B;
+}
 
 @media (max-width: 640px) {
     .titreP {
