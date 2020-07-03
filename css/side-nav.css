@@ -1,0 +1,95 @@
+:root{
+    --a: var(--secondary-color);
+    --b: var(--primary-color);
+    --c: var(--light-color);
+    --d: var(--dark-color);
+    --e: var(--shadow-black);
+}
+
+
+#mySidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--b);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    box-shadow: var(--e);
+}
+
+#mySidenav a {
+    color: var(--c);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition: 300ms;
+    font-weight: bold;
+}
+
+#mySidenav a:hover {
+    color: var(--a);
+}
+
+
+#mySidenav form {
+    margin: 0;
+    padding: 1rem 2rem;
+    white-space: nowrap;
+    border-color: none;
+}
+#mySidenav form input {
+    border-radius: 4px;
+    border-style: none;
+    width: 80%;
+}
+
+#mySidenav form button {
+    background: none;
+    border: none;
+    padding: 1rem 0.2rem;
+}
+
+
+.sideBarActionButton {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+#mySidenav.open {
+    width: 80vw;
+    transition: width 0.5s;
+}
+
+#mySidenav .rs {
+    padding: 0 2rem ;
+    white-space: nowrap;
+}
+#mySidenav .rs a {
+    padding: 1rem 0.2rem;
+}
+
+/*SVG*/
+
+@media screen and (min-width: 1200px) {
+    #mySidenav {
+        width: auto;
+        /* height: auto; */
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sideBarActionButton {
+        display: none;
+    }
+
+}
