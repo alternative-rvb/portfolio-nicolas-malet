@@ -66,7 +66,7 @@ header {
 aside {
     flex: 1 1 600px;
     max-width: 600px;
-    margin: 5rem 1rem;
+    margin: 6rem 1rem;
 }
 
 
@@ -75,13 +75,14 @@ main {
     flex: 2 2 800px;
     max-width: 1200px;
     min-height: 100vh;
-    margin: 5rem 0;
+    margin: 6rem 0;
 }
 
 article {
     /* background-color: #f5f5f5; */
     padding: 1rem 0;
     margin: 1rem 0 8rem;
+    text-align: justify;
 }
 
 
@@ -131,6 +132,12 @@ blockquote i {
     align-content: flex-end;
 }
 
+.d-flex-col:nth-of-type(odd) {
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
 .fEnd{
     align-items: flex-end;
 }
@@ -151,6 +158,10 @@ blockquote i {
     padding: 0 1rem;
     /*1rem = 1em = 16px*/
 }
+
+/* .texte-col {
+    columns: 2;
+} */
 
 .text-light {
     color: white;
