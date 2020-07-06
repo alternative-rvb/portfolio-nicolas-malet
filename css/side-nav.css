@@ -64,6 +64,7 @@
 
 #mySidenav.open {
     width: 80vw;
+    max-width: 300px;
     transition: width 0.5s;
 }
 
