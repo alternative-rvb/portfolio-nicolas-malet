@@ -32,7 +32,7 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h1,
@@ -70,7 +70,6 @@ aside {
     margin: 6rem 0.5rem 3rem;
 }
 
-
 main {
     background-color: white;
     flex: 2 2 800px;
@@ -84,8 +83,7 @@ article {
     padding: 1rem 0;
 }
 
-
-body > footer {
+body>footer {
     width: 100%;
     background-color: var(--primary-color);
 }
@@ -105,12 +103,10 @@ form {
     margin: auto;
 }
 
-
 blockquote {
     margin: 1rem 0;
     background-color: #f5f5f5;
     padding: 1rem;
-
 }
 
 blockquote i {
@@ -158,21 +154,38 @@ blockquote i {
     align-content: center;
 }
 
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
 .flex-1-1-200 {
-    flex: 1 1 600px;
+    flex: 1 1 200px;
+}
+
+.flex-1-1-300 {
+    flex: 1 1 300px;
+}
+
+.flex-1-1-400 {
+    flex: 1 1 400px;
+}
+
+.order-1 {
+    order: -1;
 }
 
 .m-s {
     margin: 1rem 0;
 }
 
-.m-m{
+.m-m {
     margin: 1rem;
 }
 
 .mb-m {
     margin-bottom: 2rem;
 }
+
 .mb-xl {
     margin-bottom: 6rem;
 }
@@ -193,7 +206,6 @@ blockquote i {
 /* .texte-col {
     columns: 2;
 } */
-
 .text-light {
     color: white;
 }
@@ -253,9 +265,7 @@ blockquote i {
     font-size: 1rem;
 }
 
-
 /*HEADER*/
-
 #logo {
     max-width: 250px;
     padding: 1rem 2rem;
@@ -266,9 +276,7 @@ blockquote i {
     padding: 0 1rem;
 }
 
-
 /*ASIDE*/
-
 .card {
     padding: 1rem 0;
     background-color: var(--light-color);
@@ -277,11 +285,9 @@ blockquote i {
 .profilPhoto {
     height: 600px;
     background: 50% 100% / cover url('../images/profil.png') no-repeat;
-
 }
 
 .profilText {
-
     background-color: var(--light-color);
     margin: -4rem 1rem 0;
     /* z-index: 1; */
@@ -311,12 +317,12 @@ blockquote i {
     text-decoration: none;
     transition: 300ms;
 }
+
 .follow a:hover {
     color: var(--secondary-color);
 }
 
 /*Articles - Overlay*/
-
 .miniature {
     /* padding: 1rem; */
     position: relative;
@@ -325,7 +331,6 @@ blockquote i {
 .miniature img {
     width: 100%;
     display: block;
-
 }
 
 .miniature-overlay {
@@ -343,6 +348,7 @@ blockquote i {
 
 .miniature-overlay:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .glu1 {
@@ -367,7 +373,6 @@ blockquote i {
 .formContact input,
 .formContact textarea {
     border: solid 1px var(--primary-color);
-
     width: 100%;
     /* background-color: lawngreen; */
 }
@@ -377,17 +382,13 @@ blockquote i {
     flex: 1 1 350px;
 }
 
-
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 4rem;
     }
 
-    .flex-1-1-200 {
-        flex: 1 1 100px;
-    }
-    .flex-1-1-400 {
-        flex: 1 1 450px;
+    .order-1 {
+        order: 0;
     }
 
     .profilText {
@@ -395,5 +396,4 @@ blockquote i {
         box-shadow: none;
         border-radius: none;
     }
-
 }
