@@ -66,8 +66,8 @@ header {
 aside {
     flex: 1 1 600px;
     max-width: 600px;
-    margin: 6rem 1rem;
     background-image: url(../images/bg.jpg);
+    margin: 6rem 0.5rem 3rem;
 }
 
 
@@ -76,7 +76,7 @@ main {
     flex: 2 2 800px;
     max-width: 1200px;
     min-height: 100vh;
-    margin: 6rem 0;
+    margin: 3rem 0.5rem 6rem;
 }
 
 article {

@@ -41,6 +41,7 @@
     margin: 0;
     white-space: nowrap;
     border-color: none;
+    padding: 0 2rem;
 }
 #mySidenav form input {
     border-radius: 4px;
